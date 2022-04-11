@@ -1,0 +1,259 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*basic reset*/
+
+/*browsers have built in values for elements so we'll reset a few things to zero, you can add to this or remove items as needed*/
+
+div,
+p,
+body,
+header,
+footer,
+section,
+article,
+nav {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  border: none; /*Remove border if image is a link*/
+  margin: 0;
+  padding: 0;
+}
+
+/*html selectors*/
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  color: rgb(0, 0, 0);
+}
+
+/* Remove underlines from links */
+
+a {
+  text-decoration: none;
+}
+/* Remove list style */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+/*hide elements from browser but show for doc outline*/
+
+.hidden {
+  display: none;
+}
+
+/*Common page elements  */
+
+#container {
+  margin: 0 auto;
+  width: 960px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  /* this is our grid based off my own design */
+  display: grid;
+  grid-template-columns: repeat(10, 96px);
+  grid-column-gap: 0px;
+  grid-row-gap: 10px;
+}
+#mainHeader {
+  /* makes the grid ignore this element */
+  display: contents;
+}
+#separator {
+  background-color: #fdd70f;
+  grid-column: 1/11;
+
+  height: 22px;
+}
+
+#searchbar {
+  grid-column: 9/11;
+}
+#searchbar input[type="text"] {
+  float: right;
+  margin-top: 10px;
+  margin-right: 28px;
+  font-weight: bold;
+}
+
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: black;
+  opacity: 1; /* Firefox */
+}
+
+#logo {
+  grid-column: 1/4;
+  padding-left: 21px;
+}
+
+#mainNav {
+  grid-column: 4/11;
+  font-size: 16px;
+  font-weight: 200;
+  padding-top: 30px;
+}
+
+#mainNav ul li {
+  display: inline;
+  margin-left: 50px;
+}
+
+#mainNav ul li:first-child {
+  margin-left: 30px;
+}
+
+#mainNav ul li a {
+  color: black;
+}
+
+#mainNav ul li a:hover {
+  text-decoration: underline;
+}
+
+.selected {
+  text-decoration: underline;
+}
+main {
+  /* makes the grid ignore this element */
+  display: contents;
+}
+#heroImage {
+  width: 960px;
+}
+
+#mainFooter {
+  /* makes the grid ignore this element */
+
+  display: contents;
+}
+
+#footerNav,
+#copyRight {
+  font-size: 12px;
+  color: white;
+  font-weight: 200;
+  padding-top: 30px;
+  background-color: #302b32;
+  padding-bottom: 30px;
+}
+#footerNav {
+  grid-column: 1/9;
+}
+
+#copyRight {
+  grid-column: 9/11;
+  padding-left: 30px;
+}
+
+#footerNav ul li {
+  display: inline;
+  margin-left: 50px;
+}
+
+#footerNav ul li:first-child {
+  margin-left: 30px;
+}
+
+#footerNav ul li a {
+  color: white;
+}
+
+#footerNav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Unique Page Elements */
+/*Home Page*/
+h2 {
+  font-family: cooper-black-std, serif;
+  font-weight: 400;
+  font-style: normal;
+  grid-column: 1/11;
+  color: black;
+  text-align: center;
+  font-size: 22px;
+}
+
+h3 {
+  font-size: 19px;
+  padding-left: 5px;
+}
+
+.col1,
+.col2,
+.col3 {
+  background-color: rgb(255, 255, 255);
+  width: 199px;
+  padding-bottom: 10px;
+  box-shadow: 15px 10px 39px -2px #888, -1px -1px 5px #888;
+}
+
+.col1:hover,
+.col2:hover,
+.col3:hover {
+  transform: translate(0, -10px);
+}
+.col1 {
+  grid-column: 2/4;
+}
+.col2 {
+  grid-column: 5/7;
+}
+.col3 {
+  grid-column: 8/11;
+}
+
+#subscribe {
+  margin-top: 35px;
+  grid-column: 1/11;
+  background-color: #fdd70f;
+  padding-bottom: 33px;
+}
+
+#subscribe h2 {
+  padding-top: 25px;
+}
+
+#subform {
+  text-align: center;
+}
+
+#subform input[type="text"] {
+  font-weight: bold;
+  background-color: #fdd70f;
+  margin-right: 37px;
+}
+
+.button {
+  background-color: #ff6666;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  border-radius: 13.79px;
+  padding: 10px;
+}
+
+#pictureprofile {
+  margin-top: 33px;
+  grid-column: 1/6;
+  padding-left: 80px;
+}
+
+#MeetMe {
+  padding-left: 75px;
+  grid-column: 6/11;
+  padding-right: 58px;
+}
+
+#MeetMe h3 {
+  font-size: 22px;
+}
