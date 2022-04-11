@@ -117,6 +117,7 @@ ul {
 
 #mainNav ul li a:hover {
   text-decoration: underline;
+  color: #ff6666;
 }
 
 .selected {
@@ -256,4 +257,48 @@ h3 {
 
 #MeetMe h3 {
   font-size: 22px;
+}
+
+/*Contact - Us*/
+
+#formDescription {
+  grid-column: 4/8;
+  text-align: center;
+}
+
+#cForm {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-radius: 5px;
+  box-shadow: 15px 10px 39px -2px #888, -1px -1px 5px #888;
+  grid-column: 3/9;
+  margin-bottom: 20px;
+}
+
+#cForm label {
+  padding: 22px 22px 22px 22px;
+  display: inline-block;
+  grid-column: 3/5;
+}
+
+#cForm input[type="text"],
+textarea {
+  padding: 22px 22px 22px 22px;
+  width: 70%;
+  padding: 12px;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 4px;
+  resize: vertical;
+}
+
+#cForm input[type="submit"] {
+  background-color: #ff6666;
+  color: white;
+  padding: 12px 20px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
 }
