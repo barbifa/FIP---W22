@@ -302,3 +302,21 @@ textarea {
   cursor: pointer;
   float: right;
 }
+
+/*Recipe Page*/
+
+#foodPict {
+  margin-top: 33px;
+  grid-column: 1/6;
+  padding-left: 80px;
+}
+
+#prepInsctructions {
+  padding-left: 75px;
+  grid-column: 6/11;
+  padding-right: 0px;
+}
+
+#prepInsctructions h3 {
+  font-size: 22px;
+}
