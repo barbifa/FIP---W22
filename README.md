@@ -13,8 +13,7 @@ This is a 4 page recipes webpage. This is a static website, no database, respons
 Built using:
 --------------------------------------------------------------------------------
 [git](https://git-scm.com/) for source control and
-HTML5
-CSS
+HTML5/CSS
 
 
 ## MIT License
